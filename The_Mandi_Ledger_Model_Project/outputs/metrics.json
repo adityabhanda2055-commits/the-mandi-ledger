@@ -1,0 +1,31 @@
+{
+  "data_status": "SYNTHETIC DEMONSTRATION DATA - NOT REAL MARKET EVIDENCE",
+  "raw_monthly_rows": 96,
+  "feature_ready_rows": 84,
+  "train_rows": 67,
+  "test_rows": 17,
+  "train_period": [
+    "2019-01",
+    "2024-07"
+  ],
+  "test_period": [
+    "2024-08",
+    "2025-12"
+  ],
+  "linear_regression": {
+    "MAE_Rs_per_quintal": 89.88461131619763,
+    "RMSE_Rs_per_quintal": 103.8793960511241,
+    "R2": 0.5184967596431722
+  },
+  "naive_last_price_baseline": {
+    "MAE_Rs_per_quintal": 77.14470588235294,
+    "RMSE_Rs_per_quintal": 102.31434428787992,
+    "R2": 0.5328961652450583
+  },
+  "next_month_forecast": {
+    "month": "2026-01",
+    "predicted_modal_price_rs_per_quintal": 2693.46730838457
+  },
+  "evaluation_protocol": "Chronological 80/20 holdout; one-step-ahead rolling predictions using prior observed prices.",
+  "note": "R2 is not a percentage accuracy score. Demo results must not be interpreted as real mandi-market performance."
+}

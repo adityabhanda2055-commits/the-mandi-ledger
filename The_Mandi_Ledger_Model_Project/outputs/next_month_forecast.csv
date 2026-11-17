@@ -1,0 +1,2 @@
+forecast_month,predicted_modal_price_rs_per_quintal,forecast_type,data_status
+2026-01,2693.46730838457,one-month-ahead demonstration forecast,depends on input dataset provenance
