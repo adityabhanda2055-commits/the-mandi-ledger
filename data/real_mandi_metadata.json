@@ -1,0 +1,18 @@
+{
+  "project": "The Mandi Ledger",
+  "commodity": "Wheat",
+  "geography": "All India",
+  "period_start": "2019-01",
+  "period_end": "2026-10",
+  "monthly_observations": 94,
+  "expected_monthly_observations": 94,
+  "price_unit": "Rs./quintal",
+  "source_dataset": "https://github.com/herrrickshaw/india-mandi-arrivals",
+  "underlying_source": "AGMARKNET statewise monthly price and arrivals records",
+  "aggregation": "All-India arrivals-weighted mean of state-level monthly modal prices: sum(price_rs_qtl * arrivals_t) / sum(arrivals_t).",
+  "quality_filter": "State-month rows with arrivals_t >= 50.0 tonnes, valid positive price and valid arrivals.",
+  "missing_months_filled": false,
+  "note": "This is a national state-aggregated series, not a single mandi. The published extract starts in January 2019. The output keeps only the most recent uninterrupted run ending October 2026; any earlier gaps are excluded, not filled. This is not a single-mandi series.",
+  "output_csv": "data/real_mandi_monthly.csv",
+  "audit_csv": "data/all_india_wheat_monthly_audit.csv"
+}
